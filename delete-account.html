@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="QwikBill account deletion request page.">
+  <title>QwikBill - Delete Account</title>
+  <style>
+    :root {
+      --orange: #ff6500;
+      --orange-dark: #e84e00;
+      --text: #202124;
+      --muted: #666;
+      --bg: #fff8f2;
+      --card: #fff;
+      --border: #f0dfd2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+      background: linear-gradient(180deg, #fff1e5 0%, #fff 42%);
+    }
+    header {
+      text-align: center;
+      color: #fff;
+      padding: 55px 20px 48px;
+      background: linear-gradient(135deg, #ffb000, #ff6500 65%, #ee4300);
+    }
+    .brand {
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: -1.5px;
+    }
+    .brand span {
+      display: inline-grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      margin-right: 9px;
+      border-radius: 13px;
+      background: #fff;
+      color: var(--orange);
+      vertical-align: middle;
+      box-shadow: 0 8px 24px rgba(0,0,0,.15);
+    }
+    header h1 {
+      margin: 22px 0 5px;
+      font-size: 30px;
+    }
+    header p {
+      margin: 0 auto;
+      max-width: 650px;
+      opacity: .95;
+    }
+    main {
+      width: min(850px, calc(100% - 28px));
+      margin: 32px auto 60px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 28px rgba(92, 48, 20, .06);
+    }
+    h2 {
+      color: var(--orange-dark);
+      margin-top: 0;
+      font-size: 22px;
+    }
+    h3 { font-size: 17px; }
+    li { margin: 7px 0; }
+    .steps {
+      counter-reset: steps;
+      list-style: none;
+      padding: 0;
+    }
+    .steps li {
+      counter-increment: steps;
+      position: relative;
+      padding: 13px 15px 13px 52px;
+      background: #fff6ed;
+      border-radius: 12px;
+      margin: 10px 0;
+    }
+    .steps li::before {
+      content: counter(steps);
+      position: absolute;
+      left: 14px;
+      top: 12px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--orange);
+      color: white;
+      font-weight: 800;
+    }
+    .email {
+      display: inline-block;
+      padding: 13px 18px;
+      border-radius: 12px;
+      background: #fff0df;
+      color: #c84400;
+      font-weight: 800;
+      text-decoration: none;
+      word-break: break-word;
+    }
+    .note {
+      border-left: 4px solid var(--orange);
+      background: #fff5e9;
+      padding: 15px 18px;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 28px 16px;
+      color: #777;
+      background: #fff;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      header { padding: 42px 16px 38px; }
+      .brand { font-size: 30px; }
+      main { width: calc(100% - 20px); margin-top: 20px; }
+      .card { padding: 21px; border-radius: 16px; }
+      header h1 { font-size: 25px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><span>Q</span>QwikBill</div>
+  <h1>Delete Your Account</h1>
+  <p>Request deletion of your QwikBill account and associated data.</p>
+</header>
+
+<main>
+
+  <section class="card">
+    <h2>How to Request Account Deletion</h2>
+    <p>
+      You can request deletion of your QwikBill account and associated data by
+      contacting us using the email address below.
+    </p>
+
+    <ol class="steps">
+      <li>Send an email from, or include, the email address associated with your QwikBill account.</li>
+      <li>Use the subject line <strong>QwikBill Account Deletion Request</strong>.</li>
+      <li>Tell us that you want your QwikBill account and associated data deleted.</li>
+      <li>We may verify account ownership before processing the request.</li>
+    </ol>
+
+    <p>
+      <a class="email" href="mailto:support.jktechdevelopers@gmail.com?subject=QwikBill%20Account%20Deletion%20Request">
+        support.jktechdevelopers@gmail.com
+      </a>
+    </p>
+
+    <div class="note">
+      <strong>Important:</strong> Replace the email address above with your actual
+      QwikBill support/privacy email before publishing this page.
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Data That Will Be Deleted</h2>
+    <p>Subject to applicable legal and security requirements, account deletion may include:</p>
+    <ul>
+      <li>QwikBill account information and authentication-related account data.</li>
+      <li>Business/store profile information.</li>
+      <li>Products and inventory information.</li>
+      <li>Bills and invoice history associated with the account.</li>
+      <li>Customer information stored in the account.</li>
+      <li>Device-binding information associated with the account.</li>
+      <li>Other account-associated data that is not required to be retained.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Data That May Be Retained</h2>
+    <p>
+      Some information may need to be retained when required by applicable law,
+      tax or accounting requirements, fraud prevention, security, dispute
+      resolution, or other legitimate legal obligations.
+    </p>
+    <p>
+      Where retention is required, the information will be retained only for the
+      period necessary for the applicable purpose and will be handled according
+      to our privacy and security practices.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Digital Invoice Links</h2>
+    <p>
+      Previously shared public digital invoice links may continue to be accessible
+      for a limited period while deletion is being processed or where retention is
+      legally required. We will take reasonable steps to remove account-associated
+      digital invoice data when it is eligible for deletion.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Processing Time</h2>
+    <p>
+      Account deletion requests will be reviewed and processed within a reasonable
+      period after the request and account ownership have been verified.
+    </p>
+    <p>
+      If additional information is required to verify the request, we may contact
+      you using the information provided with the request.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Local Data on Your Device</h2>
+    <p>
+      QwikBill may store cached information locally on your device. After your
+      account is deleted, you should also uninstall QwikBill or clear its app data
+      if you want locally stored information removed from your device.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Questions</h2>
+    <p>
+      For privacy questions or requests concerning your QwikBill account, contact
+      the QwikBill support/privacy team using the email address provided above.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 QwikBill. All rights reserved.
+</footer>
+
+</body>
+</html>
